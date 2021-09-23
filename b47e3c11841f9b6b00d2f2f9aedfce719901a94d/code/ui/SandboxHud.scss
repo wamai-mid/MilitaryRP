@@ -1,0 +1,207 @@
+.DEV_PANEL {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.DEV1,
+.DEV2 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    font-family: poppins;
+    text-align: right;
+    text-shadow: 2px 2px 5px rgba( black, 0.3);
+}
+
+Health,
+Armor,
+PlayMode,
+Speed,
+CurrentTool,
+OwnerEye {
+    text-shadow: 2px 2px 5px rgba( black, 0.3);
+    position: absolute;
+    font-family: poppins;
+    background-color: rgba(#0066ff, 0.3);
+    backdrop-filter: blur(5px) brightness(0.89) contrast(0.93);
+    border: 3px solid white;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 80px;
+    width: 190px;
+    color: white;
+    padding: 0 20px;
+    align-items: center;
+}
+
+Health {
+    left: 10px;
+    bottom: 100px;
+}
+
+Armor {
+    left: 10px;
+    bottom: 10px;
+}
+
+PlayMode {
+    padding: 8px;
+    left: 210px;
+    bottom: 10px;
+    width: 80px;
+}
+
+Speed,
+CurrentTool {
+    width: 248px;
+    top: 10px;
+}
+
+Speed {
+    right: 10px;
+}
+
+OwnerEye {
+    &.hide {
+        opacity: 0;
+    }
+    &:not(.hide) {
+        opacity: 1;
+    }
+    font-size: 12px;
+    height: 50px;
+    left: 10px;
+    bottom: 190px;
+    padding-left: 5px;
+    padding-right: 5px;
+    &>* {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+CurrentTool {
+    left: 10px;
+    height: 120px;
+    flex-direction: column;
+    opacity: 0.0;
+    text-align: center;
+    &.active {
+        opacity: 1.0;
+    }
+    .title {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+    .description {
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: normal;
+        color: white;
+        opacity: 0.8;
+    }
+}
+
+rootpanel {
+    background-color: rgba( #333, 0);
+    transition: background-color 0.2s ease-in;
+    &.spawnmenuopen {
+        transition: background-color 0.3s ease-out;
+        background-color: rgba( #333, 0.9);
+    }
+    &.devcamera {
+        display: none;
+    }
+}
+
+InventoryBar {
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+InventoryIcon {
+    border: 3px solid white;
+    border-top: 0;
+    width: 80px;
+    height: 45px;
+    background-color: rgba(#0066ff, 0.3);
+    backdrop-filter: blur(5px) brightness(0.89) contrast(0.93);
+    margin: 0px 4px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    font-family: poppins;
+    font-weight: bold;
+    .item-name {
+        padding: 2px;
+        color: white;
+        text-align: center;
+        left: 0;
+        right: 0;
+        font-size: 10px;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.7;
+        transition: all 0.5s ease-in-out;
+    }
+    .slot-number {
+        font-size: 25px;
+        color: white;
+        font-weight: 900;
+        opacity: 0.3;
+        position: absolute;
+        top: 1px;
+        right: 5px;
+    }
+    &.active {
+        background-color: rgba(#0066ff, 0.5);
+        transition: all 0.1s ease-out;
+        width: 100px;
+        height: 60px;
+        .item-name {
+            opacity: 1;
+            transition: all 0.1s ease-out;
+            font-size: 13px;
+        }
+    }
+}
+
+Death {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px) saturate(0.0);
+    opacity: 0;
+    transition: all 250ms linear;
+}
+
+.dead {
+    opacity: 1;
+}
+
+Construction {
+    z-index: -2;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 200px;
+    height: 200px;
+    & .CONSTRUCTION {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

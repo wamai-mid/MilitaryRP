@@ -1,0 +1,175 @@
+﻿.theme,
+.canvas .icon {
+    text-shadow: 2px 2px 5px rgba( black, 0.3);
+    font-family: poppins;
+    background-color: rgba(#0066ff, 0.3);
+    backdrop-filter: blur(5px) brightness(0.89) contrast(0.93);
+    border: 3px solid white;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    //padding: 0 20px;
+}
+
+spawnmenu {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 100px;
+    margin-bottom: 200px;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: all 0.1s ease-out;
+    position: absolute;
+    font-family: poppins;
+    opacity: 0;
+    .tabs {
+        font-size: 16px;
+        flex-shrink: 0;
+        margin-bottom: 4px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        button {
+            border-radius: 5px 5px 0 0;
+            padding: 6px 10px;
+            margin-bottom: -4px;
+            margin-right: 10px;
+            font-size: 20px;
+            align-items: center;
+            font-weight: 600;
+            opacity: 0.2;
+            color: #fff;
+            cursor: pointer;
+            //border-radius: 5px;
+            label {
+                text-shadow: 1px 1px 4px rgba( black, 0.2);
+            }
+            &:hover {
+                background-color: rgba( #0066ff, 0.8);
+                opacity: 1;
+            }
+            &.active {
+                background-color: rgba( #0066ff, 1.0);
+                transform: scale( 1);
+                opacity: 1;
+                color: #fff;
+                //	background-color: #fff;//( #3273eb, 0.2 );
+                //color: #3273eb;
+            }
+        }
+    }
+    .left {
+        flex-grow: 1;
+        flex-direction: column;
+        position: relative;
+        left: -500px;
+        transition: all 0.3s ease-in;
+        .body {
+            flex-grow: 1;
+        }
+    }
+    .right {
+        margin-left: 10px;
+        flex-direction: column;
+        min-width: 450px;
+        flex-shrink: 0;
+        left: 500px;
+        transition: all 0.3s ease-in;
+        .body {
+            //	background-color: rgba( #333, 0.95 );
+            flex-grow: 1;
+            padding: 10px;
+            .toollist {
+                flex-direction: column;
+                width: 150px;
+                color: #aaa;
+                button {
+                    padding: 3px 10px;
+                    font-size: 20px;
+                    transition: all 0.2s ease-out;
+                    cursor: pointer;
+                    &:hover {
+                        //border-left: 3px solid #3273eb;
+                        color: white;
+                    }
+                    &.active {
+                        //border-left: 5px solid #3273eb;
+                        color: white;
+                    }
+                }
+            }
+            .inspector {
+                //background-color: rgba( #111, 0.7 );
+                flex-grow: 1;
+                margin-left: 5px;
+                border-radius: 0 3px 3px 0;
+            }
+        }
+    }
+}
+
+.spawnmenuopen spawnmenu {
+    transition: all 0.2s ease-out;
+    pointer-events: all;
+    opacity: 1;
+    transform: scale( 1);
+    .left,
+    .right {
+        left: 0;
+        transition: all 0.1s ease-out;
+    }
+}
+
+.wip {
+    background-color: rgba(gray, 0.2);
+}
+
+button.wip {
+    background-color: gray;
+}
+
+.spawnpage {
+    display: none;
+    &.active {
+        display: flex;
+        opacity: 1;
+    }
+    .canvas {
+        overflow: scroll;
+        width: 100%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;
+        .cell {
+            padding: 4px;
+        }
+        .icon {
+            color: rgba( #fff, 0.5);
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(black, 0.1);
+            background-image: url(/entity/spawnicon.png );
+            label {
+                font-size: 9px;
+                position: absolute;
+                bottom: -17px;
+                left: 0;
+                right: 0;
+                pointer-events: none;
+            }
+            &:hover {
+                color: #fff;
+                background-color: rgba(black, 0.4);
+            }
+            &:active {}
+        }
+    }
+}

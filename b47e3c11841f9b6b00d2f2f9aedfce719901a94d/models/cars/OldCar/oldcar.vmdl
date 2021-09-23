@@ -1,0 +1,160 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "oldcar_base_1.vmat"
+								to = "materials/cars/oldcar/oldcar_base_1.vmat"
+							},
+							{
+								from = "oldcar_base_2.vmat"
+								to = "materials/cars/oldcar/oldcar_base_2.vmat"
+							},
+							{
+								from = "oldcar_base_aluminium.vmat"
+								to = "materials/cars/oldcar/oldcar_base_aluminium.vmat"
+							},
+							{
+								from = "oldcar_base_beige.vmat"
+								to = "materials/cars/oldcar/oldcar_base_beige.vmat"
+							},
+							{
+								from = "oldcar_base_floor.vmat"
+								to = "materials/cars/oldcar/oldcar_base_floor.vmat"
+							},
+							{
+								from = "oldcar_base_font.vmat"
+								to = "materials/cars/oldcar/oldcar_base_front.vmat"
+							},
+							{
+								from = "oldcar_base_font_2.vmat"
+								to = "materials/cars/oldcar/oldcar_base_front_2.vmat"
+							},
+							{
+								from = "oldcar_base_metal.vmat"
+								to = "materials/cars/oldcar/oldcar_base_metal.vmat"
+							},
+							{
+								from = "oldcar_base_metal_2.vmat"
+								to = "materials/cars/oldcar/oldcar_base_metal_2.vmat"
+							},
+							{
+								from = "oldcar_base_metal_brown.vmat"
+								to = "materials/cars/oldcar/oldcar_base_metal_brown.vmat"
+							},
+							{
+								from = "oldcar_base_metal_grooved.vmat"
+								to = "materials/cars/oldcar/oldcar_base_metal_grooved.vmat"
+							},
+							{
+								from = "oldcar_base_plastic_black.vmat"
+								to = "materials/cars/oldcar/oldcar_base_plastic_black.vmat"
+							},
+							{
+								from = "oldcar_base_plastic_black_2.vmat"
+								to = "materials/cars/oldcar/oldcar_base_plastic_black_2.vmat"
+							},
+							{
+								from = "oldcar_base_red.vmat"
+								to = "materials/cars/oldcar/oldcar_base_red.vmat"
+							},
+							{
+								from = "oldcar_base_wood.vmat"
+								to = "materials/cars/oldcar/oldcar_base_wood.vmat"
+							},
+							{
+								from = "oldcar_base_wood_floor.vmat"
+								to = "materials/cars/oldcar/oldcar_base_wood_floor.vmat"
+							},
+							{
+								from = "oldcar_candle_1.vmat"
+								to = "materials/cars/oldcar/oldcar_candle_1.vmat"
+							},
+							{
+								from = "oldcar_candle_2.vmat"
+								to = "materials/cars/oldcar/oldcar_candle_2.vmat"
+							},
+							{
+								from = "oldcar_candle_base.vmat"
+								to = "materials/cars/oldcar/oldcar_candle_base.vmat"
+							},
+							{
+								from = "oldcar_candle_base_2.vmat"
+								to = "materials/cars/oldcar/oldcar_candle_base_2.vmat"
+							},
+							{
+								from = "oldcar_dark_gold.vmat"
+								to = "materials/cars/oldcar/oldcar_dark_gold.vmat"
+							},
+							{
+								from = "oldcar_front_plate.vmat"
+								to = "materials/cars/oldcar/oldcar_base_front_2.vmat"
+							},
+							{
+								from = "oldcar_glass.vmat"
+								to = "materials/cars/oldcar/oldcar_glass.vmat"
+							},
+							{
+								from = "oldcar_silver.vmat"
+								to = "materials/cars/oldcar/oldcar_silver.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.455374, 0.136089, 39.635784 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 131.226639, 78.704803, 58.527985 ]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "content/oldcar.fbx"
+						import_translation = [ 0.0, 0.0, 24.0 ]
+						import_rotation = [ 0.0, 90.0, 0.0 ]
+						import_scale = 0.5
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

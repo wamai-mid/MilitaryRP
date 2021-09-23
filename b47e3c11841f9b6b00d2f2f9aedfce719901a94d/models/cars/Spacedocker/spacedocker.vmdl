@@ -1,0 +1,122 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "bf_engine__prim_spec_1.vmat"
+								to = "materials/cars/spacedocker/spacedocker_car_engine.vmat"
+							},
+							{
+								from = "dune2_1_diffuse__spec_1.vmat"
+								to = "materials/cars/spacedocker/spacedocker_car_dune1.vmat"
+							},
+							{
+								from = "dune2_2_diffuse__spec_1.vmat"
+								to = "materials/cars/spacedocker/spacedocker_car_dune2.vmat"
+							},
+							{
+								from = "dune_2_emissive__spec_1.vmat"
+								to = "materials/cars/spacedocker/spacedocker_car_emissive.vmat"
+							},
+							{
+								from = "vehicle_generic_detail2__spec_1.vmat"
+								to = "materials/cars/spacedocker/spacedocker_car_details.vmat"
+							},
+							{
+								from = "vehicle_generic_tyrewallblack__spec_1.vmat"
+								to = "materials/cars/spacedocker/spacedocker_car_yrewallblack.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "BOX"
+						children = 
+						[
+							{
+								_class = "PhysicsShapeBox"
+								parent_bone = ""
+								surface_prop = "default"
+								collision_prop = "default"
+								origin = [ 6.913563, 0.187275, 29.495323 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+								dimensions = [ 254.854507, 71.341934, 35.166573 ]
+							},
+							{
+								_class = "PhysicsShapeBox"
+								parent_bone = ""
+								surface_prop = "default"
+								collision_prop = "default"
+								origin = [ -37.522221, 0.181017, 75.893654 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+								dimensions = [ 140.731766, 70.614075, 61.490353 ]
+							},
+							{
+								_class = "PhysicsShapeBox"
+								parent_bone = ""
+								surface_prop = "default"
+								collision_prop = "default"
+								origin = [ -44.566544, -41.144661, 75.893654 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+								dimensions = [ 88.899139, 36.537094, 61.490353 ]
+							},
+							{
+								_class = "PhysicsShapeBox"
+								parent_bone = ""
+								surface_prop = "default"
+								collision_prop = "default"
+								origin = [ -49.504562, 44.739235, 75.893654 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+								dimensions = [ 79.812271, 30.065739, 61.490353 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "content/spacedocker.fbx"
+						import_translation = [ 100.0, 35.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}
