@@ -1,5 +1,5 @@
 {
-		"name": "wif_roleplay",
+		"name": "adv_roleplay",
 		"version": "1.0",
 		"sharedassets": "*.*",
 		
@@ -11,13 +11,14 @@
 		],
 
 		//
+		// Addons can contain multiple addons, describe them here
 		//
 		"gamemodes":
 		[
 				{
-						"name": "wif_roleplay",
-						"title": "WIF Roleplay",
-						"description": "MilitaryRP by WIF"
+						"name": "adv_roleplay",
+						"title": "Advanced Roleplay",
+						"description": "Not a simple Darkrp :)"
 				}
 		]
 }

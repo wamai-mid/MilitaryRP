@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-[Library( "wif_roleplay", Title = "WIF Roleplay" )]
+[Library( "adv_roleplay", Title = "WIF Roleplay" )]
 partial class AdvRoleplay : Game
 {
 	public AdvRoleplay()
