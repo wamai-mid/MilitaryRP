@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-[Library( "adv_roleplay", Title = "Advanced Roleplay" )]
+[Library( "wif_roleplay", Title = "WIF Roleplay" )]
 partial class AdvRoleplay : Game
 {
 	public AdvRoleplay()
@@ -84,12 +84,12 @@ partial class AdvRoleplay : Game
 		{
 			if ( basePlayer.DevController is NoclipController )
 			{
-				Log.Info( "Noclip Mode Off" );
+				Log.Info( "Режим полета выключен" );
 				basePlayer.DevController = null;
 			}
 			else
 			{
-				Log.Info( "Noclip Mode On" );
+				Log.Info( "Режим полета включен" );
 				basePlayer.DevController = new NoclipController();
 			}
 		}
